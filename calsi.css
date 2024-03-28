@@ -108,4 +108,7 @@ button:active{
         align-items: end;
         justify-content: end;
     }
+    #display_digit{
+        font-size: 3rem;
+    }
 }
