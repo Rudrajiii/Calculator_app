@@ -1,0 +1,111 @@
+body,html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8d8c8c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    background: #333333;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+#all_buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 30px;
+}
+span{
+    display: grid;
+    padding: 0 31px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+span .max-width{
+    width: 170px;
+}
+.calsi{
+    max-width: 400px;
+    height: 630px;
+    background: #000000;
+    border-radius: 46px;
+    overflow: hidden;
+    outline: 3px solid whitesmoke;
+    filter: drop-shadow(5px 5px 7px black);
+    position: relative;
+}
+#display_digit{
+    width: 100%;
+    height: 100px;
+    background: #000;
+    border: none;
+    color: white;
+    font-size: 5rem;
+    text-align: right;
+    padding: 17px;
+}
+button:hover{
+    background: #5c5b5b
+}
+button:active{
+    background: #908e8e
+}
+.operating_button{
+    background: #FE9E0C;
+}
+.ash-color{
+    background: #A6A6A6;
+}
+.operating_button:hover{
+    background: #e5af5f;
+}
+
+@media (width <= 400px){
+    #all_buttons{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        place-items: center;
+        padding: 16px;
+        gap: 10px;
+    }
+    #all_buttons button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        
+    }
+    .calsi{
+        width: 300px;
+        height: 550px;
+    }
+    #mw{
+        width: 110px;
+        height: 60px;
+        border-radius:2rem;
+    }
+    #adis ,#eq{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    span{
+        padding: 0 10px;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+}
